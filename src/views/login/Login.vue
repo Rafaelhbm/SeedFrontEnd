@@ -7,7 +7,7 @@ import axios from 'axios';
 const router = useRouter();
 
 // URL DO BACKEND
-const API_URL = 'http://localhost:5046';
+const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5046';
 
 // 'username' -> 'email' para bater com o backend
 const form = ref({
